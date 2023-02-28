@@ -1,0 +1,140 @@
+@import '../base/color';
+
+.header-area {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+
+  /* Navbar start here */
+  .logo {
+    width: 200px;
+  }
+
+  ul {
+    position: relative;
+
+
+    li {
+
+      position: relative;
+
+      .nav-link {
+        &.active {
+          &:before {
+            content: '';
+            position: absolute;
+            top: 90%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 2px;
+            transform: translate(-50%, -50%);
+            background-color: $primary_color;
+            margin-left: -30px !important;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 90%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 2px;
+            transform: translate(-50%, -50%);
+            background-color: $primary_color;
+            margin-right: 30px !important;
+          }
+        }
+
+
+
+
+
+      }
+
+      a {
+        font-size: 16px;
+        margin-left: 20px;
+        font-weight: 400;
+        color: $white;
+
+        &.active {
+          color: $primary_color !important;
+        }
+
+        &:hover {
+          color: $primary_color
+        }
+      }
+    }
+  }
+
+  /* Navbar end here */
+  /* Banner start here */
+  .banner {
+    position: relative;
+
+
+    .banner-img {
+      position: absolute;
+      top: 30px;
+      bottom: 0;
+      right: 10%;
+
+    }
+
+    h5 {
+      color: $primary_color;
+    }
+
+    h1 {
+      font-size: 38px;
+      color: $white;
+      margin: 25px 0;
+    }
+
+    p {
+      color: $text_color !important;
+      margin-bottom: 50px;
+    }
+
+    .download-btn {
+      padding: 12px 16px;
+      border-radius: 2px;
+      background-color: $primary_color;
+      color: $white !important;
+      text-transform: uppercase;
+      border: none;
+
+      &:hover {
+        background-color: transparent;
+
+      }
+    }
+
+
+    .features-btn {
+      margin-left: 30px;
+      border: 1px solid $border_color;
+      color: $white !important;
+      padding: 12px 16px;
+      border-radius: 2px;
+      background-color: transparent !important;
+      text-transform: uppercase;
+
+
+      &:hover {
+        background-color: $primary_color !important;
+        border: none;
+      }
+    }
+
+
+
+
+
+  }
+
+  /* Banner End here */
+}

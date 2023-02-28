@@ -1,0 +1,111 @@
+.price_section {
+
+    padding: 50px 0;
+
+    .price_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            color: #000;
+            font-weight: bold
+        }
+
+        p {
+            color: #fff;
+            padding: 0;
+            margin-bottom: 50px;
+            display: block;
+            width: 500px;
+            color: #000
+        }
+    }
+
+    .priceItem {
+        border: 1px solid $border_color;
+        padding: 20px 0;
+        transition: 0.3s ease;
+        cursor: pointer;
+
+        h4 {
+            font-weight: bold;
+            color: #000;
+            border-bottom: 1px solid $border_color;
+            padding-bottom: 20px;
+        }
+
+
+        h5 {
+            color: $border_color;
+            font-size: 12px;
+            padding-bottom: 12px;
+        }
+
+        .price {
+            border-bottom: 1px solid $border_color;
+
+
+            h1 {
+                span {
+                    display: inline-block;
+                    font-size: 20px;
+                    margin-top: -1px;
+                    position: absolute;
+                    margin-left: -13px;
+                }
+            }
+        }
+
+        .price-content {
+            color: $text_color;
+
+            p {
+                span {
+                    color: $primary_color;
+
+                }
+            }
+        }
+
+        .order_btn {
+            display: inline-block;
+            border: 1px solid $border_color;
+            border-radius: 4px;
+            padding: 20px 30px;
+            color: $primary_color;
+            margin-top: 20px;
+        }
+
+
+        &:hover {
+            .price {
+                background: $primary_color;
+                color: #fff;
+            }
+
+
+        }
+
+        &:hover {
+            h1 {
+                color: #fff;
+
+
+            }
+
+            h4 {
+                color: $primary_color;
+            }
+
+            .order_btn {
+                background: $primary_color;
+                color: #fff;
+            }
+
+        }
+
+    }
+
+}
