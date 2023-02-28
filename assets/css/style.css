@@ -667,22 +667,30 @@ body {
   }
   li {
     position: relative;
+    display: inline-block;
+  }
+  li .nav-link {
+    display: inline-block;
   }
   li .nav-link.active:before {
+    display: none !important;
     content: "";
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: -100px;
+    transform: translate(-50%, -50%);
     width: 20px;
     height: 2px;
     background-color: #008ed6;
     margin-left: -30px !important;
   }
   li .nav-link.active:after {
+    display: none !important;
     content: "";
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: -100px;
+    transform: translate(-50%, -50%);
     width: 20px;
     height: 2px;
     background-color: #008ed6;
@@ -810,7 +818,7 @@ body {
     margin: 20px 10px;
   }
   .header-area .banner-img {
-    margin-top: 530px;
+    margin-top: 580px;
   }
 }
 @media only screen and (max-width: 991px) {
