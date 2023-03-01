@@ -2,6 +2,42 @@
     padding-top: 85px;
     position: relative;
 
+    .features-details {
+        position: relative;
+
+        .feature-bottom-line {
+            position: relative;
+            left: 2%;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -140px;
+                left: 0;
+
+                width: 20px;
+                height: 2px;
+                transform: translate(-50%, -50%);
+                background-color: $primary_color;
+
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: -140px;
+                left: 5%;
+                width: 20px;
+                height: 2px;
+                transform: translate(-50%, -50%);
+                background-color: $primary_color;
+
+            }
+
+        }
+    }
+
+
     .circle {
         border: 1px solid $border_color;
         width: 100px;

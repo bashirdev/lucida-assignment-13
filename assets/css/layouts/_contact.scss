@@ -1,61 +1,56 @@
 .contact-area {
     background-color: #ededed;
-    padding-top: 80px;
-    height: 100%;
     position: relative;
+    padding-top: 80px;
 
     .contact-form-wrapper {
-        position: relative;
-        height: 100vh;
+        padding-bottom: 300px;
+    }
 
-        .form-area {
-            position: absolute;
-            background-color: #000;
-            max-width: 1000px;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 30px 20px;
-            height: 500px;
-            z-index: 100;
-
+    .form-area {
+        position: absolute;
+        background-color: #000;
+        width: 80%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px 20px;
+        z-index: 100;
 
 
-            .contact-form {
+        .contact-form {
 
-                input {
-                    border-color: inherit;
-                    -webkit-box-shadow: none;
-                    box-shadow: none;
-                    background-color: transparent !important;
-                    border: 1px solid #444348;
-                    border-radius: 0 !important;
-                    color: #fff;
-                    padding: 16px 10px;
 
-                    &::placeholder {
-                        color: #444348;
+            input {
+                border-color: inherit;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background-color: transparent !important;
+                border: 1px solid #444348;
+                border-radius: 0 !important;
+                color: #fff;
+                padding: 16px 10px;
 
-                    }
-                }
+                &::placeholder {
+                    color: #444348;
 
-                textarea {
-                    border-color: inherit;
-                    -webkit-box-shadow: none;
-                    box-shadow: none;
-                    background-color: transparent !important;
-                    border: 1px solid #444348;
-                    border-radius: 0 !important;
-                    color: #fff;
-
-                    &::placeholder {
-                        color: #444348;
-
-                    }
                 }
             }
 
+            textarea {
+                border-color: inherit;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background-color: transparent !important;
+                border: 1px solid #444348;
+                border-radius: 0 !important;
+                color: #fff;
 
+                &::placeholder {
+                    color: #444348;
+
+                }
+            }
         }
 
 
@@ -78,13 +73,7 @@
     position: relative;
 
 
-    // .bottom-footer {
-    //     position: absolute;
-    //     z-index: 1;
-    //     left: 0;
 
-
-    // }
 
     ul {
         display: flex;
@@ -92,7 +81,7 @@
 
         li {
             display: inline-block;
-            padding: 0 20px;
+            padding: 0 10px;
         }
 
 
