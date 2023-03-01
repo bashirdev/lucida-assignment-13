@@ -124,9 +124,9 @@
             </div>
            
         </div>
-        <div class="row pt-100">
+        <div class="row pt-100 img-animation-container">
            <div class="col-md-5 col-sm-12">
-                <img src="./assets/img/phone-2.png" alt="" srcset="" class="img-fluid">
+                <img src="./assets/img/phone-2.png" alt="" srcset="" class="img-fluid image">
            </div>
            <div class="col-md-7 col-sm-12">
                 <div class="features-content-bottom mt-5 ">
@@ -159,7 +159,7 @@
         </div>
       
       </div>
-      <div class="pt-40 feature-bg-bottom">
+      <div class="pt-40 feature-bg-bottom img-animation-container">
            <div class="container">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
@@ -174,8 +174,8 @@
                         
                     </div>
                </div>
-               <div class="col-md-6 col-sm-12">
-                <img src="./assets/img/phone-3.png" alt="" srcset="" class="img-fluid">
+               <div class="col-md-6 col-sm-12 ">
+                <img src="./assets/img/phone-3.png" alt="" srcset="" class="img-fluid image-2">
            </div>
               </div>
            </div>
@@ -532,6 +532,31 @@
         item.classList.remove('active')
     })
   }
+
+let featureSection=document.querySelector('.img-animation-container')
+featureSection.addEventListener('mouseenter', ()=>{
+    let img=document.querySelector('.image')
+    let img2=document.querySelector('.image-2')
+    img2.style.transform=`rotate(10deg)`;
+    img.style.transform=`rotate(3deg)`;
+    img.style.transition=`0.3s ease`;
+    img2.style.transition=`0.3s ease`;
+    
+    removeCursor()
+})
+
+function removeCursor(){
+    featureSection.addEventListener('mouseleave', ()=>{
+    let img=document.querySelector('.image')
+    let img2=document.querySelector('.image-2')
+    img.style.transform=`rotate(0deg)`;
+    img.style.transition=`0.3s ease`;
+    img2.style.transition=`0.3s ease`;
+  
+    img2.style.transform=`rotate(0deg)`;
+})
+}
+
     </script>
 
   </body>
