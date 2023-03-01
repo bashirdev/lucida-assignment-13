@@ -5,15 +5,15 @@
     .features-details {
         position: relative;
 
-        .feature-bottom-line {
+        h3 {
             position: relative;
-            left: 2%;
+
 
             &:before {
                 content: '';
                 position: absolute;
-                top: -140px;
-                left: 0;
+                top: 40px;
+                left: 10px;
 
                 width: 20px;
                 height: 2px;
@@ -25,8 +25,8 @@
             &:after {
                 content: '';
                 position: absolute;
-                top: -140px;
-                left: 5%;
+                top: 40px;
+                left: 50px;
                 width: 20px;
                 height: 2px;
                 transform: translate(-50%, -50%);

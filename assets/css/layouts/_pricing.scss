@@ -13,6 +13,37 @@
             font-weight: bold
         }
 
+        h3 {
+            position: relative;
+
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 40px;
+                left: 40%;
+
+                width: 20px;
+                height: 2px;
+                transform: translate(-50%, -50%);
+                background-color: $primary_color;
+
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 40px;
+                right: 40%;
+                width: 20px;
+                height: 2px;
+                transform: translate(-50%, -50%);
+                background-color: $primary_color;
+
+            }
+
+        }
+
         p {
             color: #fff;
             padding: 0;
