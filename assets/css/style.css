@@ -817,6 +817,12 @@ body {
     padding-bottom: 50px;
     text-align: center;
   }
+  .header-area .banner-content h1 {
+    font-size: 32px;
+  }
+  .header-area .banner-content p {
+    font-size: 14px;
+  }
   .header-area .banner-img {
     margin-top: 310px;
     height: 50%;
@@ -825,21 +831,46 @@ body {
   .header-area .banner-img img {
     height: 400px;
   }
-  .contact-form-wrapper {
-    padding-bottom: 200px;
+  p .likeWhat {
+    font-size: 14px !important;
+  }
+  .carousel-bottom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .features-area .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .features-area .col-md-3 p {
+    font-size: 14px;
+    max-width: 300px;
+    text-align: center;
+    display: inline-block;
+  }
+  .price_section .priceItem {
+    margin-bottom: 20px;
+  }
+  .price_section .priceItem p {
+    font-size: 14px;
+    max-width: 300px;
+    display: inline-block;
   }
   .form-area {
     position: absolute;
     background-color: #000;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 40px 20px;
+    height: 730px;
+    margin-top: 200px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 100;
     width: 100% !important;
-    padding-right: 30%;
-    padding-left: 30%;
-    margin-top: 100px;
   }
   .form-area .send-btn {
     flex: 1;
@@ -875,7 +906,7 @@ body {
     color: #444348;
   }
 }
-@media only screen and (max-width: 532px) {
+@media (max-width: 532px) {
   p {
     text-align: center !important;
   }
